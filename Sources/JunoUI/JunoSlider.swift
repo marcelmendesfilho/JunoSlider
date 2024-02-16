@@ -65,7 +65,7 @@ public struct JunoSlider: View {
                 .clipShape(.capsule) // Best attempt at fixing a bug https://twitter.com/ChristianSelig/status/1757139789457829902
                 .contentShape(.hoverEffect, .capsule)
         }
-        .gesture(DragGesture(minimumDistance: 0.0)
+        .gesture(DragGesture(minimumDistance: 0.1)
             .onChanged { value in
                 if startingSliderValue == nil {
                     startingSliderValue = sliderValue
